@@ -1,5 +1,5 @@
 {% set name = "jax-tqdm" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax_tqdm-{{ version }}.tar.gz
-  sha256: 178cf14f77c11f1318bd305d14771185aff72fb1a03332e06c78e51cc230f888
+  sha256: 6f3434a1895352db69619e084d5c4b0e77096e75b2b5ef0c81a4667611b64cf1
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - tqdm >=4.64.1,<5.0.0
     - jax >=0.3.5
+    - chex
 
 test:
   imports:
