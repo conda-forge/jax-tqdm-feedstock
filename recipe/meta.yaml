@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - tqdm >=4.64.1,<5.0.0
     - jax >=0.3.5
+    - chex
 
 test:
   imports:
