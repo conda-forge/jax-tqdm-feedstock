@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.2.0
+    - uv-build
     - pip
   run:
     - python >={{ python_min }}
-    - tqdm >=4.64.1,<5.0.0
-    - jax >=0.3.5
-    - chex
+    - tqdm >=4.70.1
+    - jax >=0.4.12
+    - chex >=0.1.90
 
 test:
   imports:
