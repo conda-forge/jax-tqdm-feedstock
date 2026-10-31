@@ -1,5 +1,5 @@
 {% set name = "jax-tqdm" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jax_tqdm-{{ version }}.tar.gz
-  sha256: d76a7ab07286ed8024fa019add2668b4d1d6ddf3bcaa166f2e1466d9e51b99a0
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/jax_tqdm-{{ version }}.tar.gz
+  sha256: 942af4c5acc9de6d1db3ee744014acb7ed32c333c852906c0d1b82f70def6443
 
 build:
   noarch: python
